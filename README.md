@@ -20,6 +20,7 @@ This app includes a landing page where a user will be presented with app logo an
 
 ## Screenshots
 
+
 ## Contributors
 Junnel R. Padilla, UC Berkeley Bootcamp Modules, ChatGPT
   
