@@ -1,11 +1,12 @@
 {
   "name": "JATE",
+  "description": "Text editor application front end",
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
     "start": "webpack --watch"
   },
-  "author": "2U",
+  "author": "JP Padilla",
   "license": "UNLICENSED",
   "devDependencies": {
     "@babel/core": "^7.15.0",
