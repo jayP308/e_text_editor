@@ -1,7 +1,13 @@
 import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
+import './header'
 import '../css/style.css';
+
+import logoPic from '../images/logo.png';
+document.getElementById('logo-image').src = logoPic;
+document.getElementById('logo-image').setAttribute("width", "96");
+
 
 const main = document.querySelector('#main');
 main.innerHTML = '';

@@ -1,5 +1,3 @@
-initdb();
-
 import { openDB } from 'idb';
 
 // Constants to hold the database name and version for ease of updates
@@ -48,25 +46,27 @@ export const putDb = async (content) => {
 };
 
 // TODO: Add logic for a method that gets all the content from the database
-export const getDb = async () => {
 
+export const getDb = async () => {
+  // Check if the database exists, if not, create it before doing any database operations
   const isExisting = (await window.indexedDB.databases()).map(db => db.name).includes(DB_NAME);
   if (!isExisting) {
     await initDB();
   }
 
-
+  // Open the database
   const jateDb = await openDB(DB_NAME, DB_VERSION);
   const tx = jateDb.transaction(DB_NAME, 'readonly');
   const store = tx.objectStore(DB_NAME);
 
+  // Get the content from the database by its key (in this case, key = 1)
   const request = store.get(1);
   const result = await request;
   console.log('result.value', result);
 
+  // Return the value if it exists, otherwise return false
   return (result) ? result.value : false;
 };
 
 // Initialize the database when the module is imported
 initDB();
-
