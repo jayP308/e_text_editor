@@ -19,13 +19,6 @@ This app includes a landing page where a user will be presented with app logo an
 
 
 ## Screenshots
-Homepage 
-
-<img src="./public/images/main-page.png" />
-
-Profile Page
-
-<img src="./public/images/profile-page.png" />
 
 ## Contributors
 Junnel R. Padilla, UC Berkeley Bootcamp Modules, ChatGPT
