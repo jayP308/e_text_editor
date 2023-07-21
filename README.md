@@ -21,7 +21,7 @@ This app includes a landing page where a user will be presented with app logo an
 ## Screenshots
 Main Page
 
-<img src="./images/jate-mainpage.png" alt='main-page/>
+<img src="./images/jate-mainpage.png" alt='main-page' />
 
 ## Contributors
 Junnel R. Padilla, UC Berkeley Bootcamp Modules, ChatGPT
